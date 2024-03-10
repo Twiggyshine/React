@@ -1,0 +1,34 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.lane {
+  width: 40px;
+  height: 5px;
+  background-color: #fcfafa;
+  margin: 3px;
+  transition: 0.5s;
+  
+}
+
+.open .lane:nth-child(1) {
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.open .lane:nth-child(2) {
+  opacity: 0;
+}
+
+.open .lane:nth-child(3) {
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
